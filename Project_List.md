@@ -1,8 +1,3 @@
----
-title: 'Project documentation template'
-disqus: hackmd
----
-
 Li, Guo-Hung's Projects
 ===
 # Project List
