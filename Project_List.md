@@ -3,11 +3,22 @@
 # Project List
 ---
 [TOC]
+## 6 minutes walking test image system
+### Advisor
+Prof. Fei-Pei Lai, principal investigator of Medical Informatics Laboratory  
+Dr. Jung-Yien Chien, pulmonologist at National Taiwan University Hospital
 
+### Project introduction
+6 minutes walking test is an important clinical test in assessing aerobic capacity and endurance. A patient is asked to walk back and forth through  a 30 meters hallway in 6 minutes, and a professional caregiver needs to stay next to the patient during the test. This system aims to make patients have the ability to conduct the test outside the hospital without accompanied by a caregiver.
+### Contribution
+1. Use Jetson Nano and camera to fetch the real-time image of the test.
+2. Use Yolo v4 to detect the patients' joints.
+3. Calculate the distance and velocity the patient has walked during the test.
+ 
 ## Establishing a machine-learning model based on perioperative data to predict and prevent anesthesia-related adverse outcomes
 
 ### Collaborator
-Dr. Pei-Fu Chen
+Dr. Pei-Fu Chen, anesthesiologist at Far Eastern Memorial Hospital
 ### Project introduction
 This project aims to establish a risk predicting model, which can be embedded into PAER, IAER, and EMR
 for practicing. An anesthesiologist can know post-anesthesia mortality and morbidity risks in more detail when assessing patients in a pre-anesthesia clinic, and make a plan to reduce these risks. It also helps communicate with patients and manage medical resources. This project can develop a model for the medical decision-making system and lead to more personal, more accurate, and more intelligent medical care.
@@ -48,7 +59,8 @@ This project aims to automatically extract the onset date of stroke patients and
 ---
 ## NTU MED GOD, LIFESTYLE GROUP
 ### Advisor
-Prof. Fei-Pei Lai, principal investigator of Medical Informatics Laboratory
+Prof. Fei-Pei Lai, principal investigator of Medical Informatics Laboratory  
+Dr. Jung-Yien Chien, pulmonologist in Mational Taiwan University Hospital
 
 ### Project introduction
 With the rapid progress of medicine, a lot of treatments and medications have been developed,
