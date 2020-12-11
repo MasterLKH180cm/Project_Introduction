@@ -95,7 +95,7 @@ To monitoring user's daily activity levels, I had developed an Android App to co
 ---
 ## LATERALIZATION OF WOMEN’S BRAIN CHANGE WITH AGE
 ### Advisor 
-Chao-Wen Huang and Prof. Yu-Te Wu, principal investigator of Medical Image and Signal Analysis Laboratory
+Prof. Yu-Te Wu, principal investigator of Medical Image and Signal Analysis Laboratory
 ### Project introduction
 The lateralization of brain function refers to some neural functions, or cognitive processes tend to be more dominant in one hemisphere than the other. The project is to find out the relation between age and the change of lateralization pattern.
 ### Contribution
