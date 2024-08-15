@@ -1,3 +1,91 @@
+<style>
+
+html, body, .ui-content {
+    background-color: #333;
+    color: #ddd;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+    color: #ddd;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+    border-bottom-color: #ffffff69;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+    color: #fff;
+}
+
+.markdown-body img {
+    background-color: transparent;
+}
+
+.ui-toc-dropdown .nav>.active:focus>a, .ui-toc-dropdown .nav>.active:hover>a, .ui-toc-dropdown .nav>.active>a {
+    color: white;
+    border-left: 2px solid white;
+}
+
+.expand-toggle:hover, 
+.expand-toggle:focus, 
+.back-to-top:hover, 
+.back-to-top:focus, 
+.go-to-bottom:hover, 
+.go-to-bottom:focus {
+    color: white;
+}
+
+
+.ui-toc-dropdown {
+    background-color: #333;
+}
+
+.ui-toc-label.btn {
+    background-color: #191919;
+    color: white;
+}
+
+.ui-toc-dropdown .nav>li>a:focus, 
+.ui-toc-dropdown .nav>li>a:hover {
+    color: white;
+    border-left: 1px solid white;
+}
+
+.markdown-body blockquote {
+    color: #bcbcbc;
+}
+
+.markdown-body table tr {
+    background-color: #5f5f5f;
+}
+
+.markdown-body table tr:nth-child(2n) {
+    background-color: #4f4f4f;
+}
+
+.markdown-body code,
+.markdown-body tt {
+    color: #eee;
+    background-color: rgba(230, 230, 230, 0.36);
+}
+
+a,
+.open-files-container li.selected a {
+    color: #5EB7E0;
+}
+
+</style>
 # Li, Guo-Hung's Backend Projects
 ---
 # Project List
@@ -16,16 +104,72 @@ Dr. Jung-Yien Chien, pulmonologist at National Taiwan University Hospital
 2. Use Yolo v4 to detect the patients' joints.
 3. Calculate the distance and velocity the patient has walked during the test.
  --->
-## NTU MED GOD, LIFESTYLE GROUP
-### Advisor
+## Working Projects
+### Mayo Clinic Project 
+#### Advisor
+Dr. Jim long, AESOP tech
+
+#### Project introduction
+Because medical behaviors are different between countries, we try to use Mayo Clinic data to build statistic models and applied to products
+#### Target
+Build association models for medicines, diagnoses, procedures, surgery, lab test, diagnoses extracted by NLP
+#### Contribution
+1. ETL of **billions of prescription data**
+2. Build statistic association model
+3. Define the rules and parameters
+---
+### Prescription Error Detection System 
+#### Advisor
+Dr. Jim long, AESOP tech
+
+#### Project introduction
+Detect wrong prescribed medicines and raise alert for doctors.
+#### Target
+Complete and refine detection algorithm
+#### Contribution
+1. ETL of **billions of prescription data**
+2. Build statistic association model
+3. Define the rules and parameters
+---
+### Medical Records Data Mining System
+#### Advisor
+Dr. Jim long, AESOP tech
+
+#### Project introduction
+Extract diagnoses from free text medical records and recommend doctors to add them into problem list 
+#### Target
+Build a web-based system and data mining api.
+#### Contribution
+1. Develop **Frontend** and **Backend** program
+    - **UI/UX**
+    - **API**
+2. **Data mining**
+3. Add information of National Health Insurance like usage freguency, CC, primaryDx...
+---
+### DeepDRG: Health Insurance Declaration Recommender System
+#### Advisor
+Dr. Jim long, AESOP tech
+#### Project introduction
+Using **GRU** model with patient's medicine record, procedure record, operation record and problem list to **recommend proper main diagnosis code**.
+#### Target
+**Speed up the coding diagnosis from minutes to seconds** and improve the accuracy of coding.
+#### Contribution
+1. Collect 15 years Urology and Chest Medicine inpatients' data.
+2. Data modeling and evaluation.
+3. Get **over 80% in precision**
+
+---
+## Research Projects
+### NTU MED GOD, Lifestyle Team
+#### Advisor
 Prof. Fei-Pei Lai, principal investigator of Medical Informatics Laboratory  
 Dr. Jung-Yien Chien, pulmonologist in Mational Taiwan University Hospital
 
-### Project introduction
+#### Project introduction
 Dashboards of wearable devices data for medical caregivers to observe patients' health condition.
-### Target
+#### Target
 Build a complete system and apply to more medical research.
-### Contribution
+#### Contribution
 1. Develop and maintain of subject **data monitoring platform** 
     - **UI/UX**
     - **Database management**
@@ -37,15 +181,15 @@ Build a complete system and apply to more medical research.
 5. Prove that lifestyle data could be as important as a clinical questionnaire in disease prediction
 
 ---
-## ESTABLISHING A MACHINE-LEARNING MODEL BASED ON PERIOPERATIVE DATA TO PREDICT AND PREVENT ANESTHESIA-RELATED ADVERSE OUTCOMES
+### Establishing A Machine-Learning Model Based On Perioperative Data To Predict And Prevent Anesthesia-Related Adverse Outcomes
 
-### Collaborator
+#### Collaborator
 Dr. Pei-Fu Chen, anesthesiologist at Far Eastern Memorial Hospital
-### Project introduction
+#### Project introduction
 Establish a risk predicting model to reduce the risks of post-anesthesia mortality and morbidity when assessing patients in a pre-anesthesia clinic.
-### Target
+#### Target
 Reduce the mortality and morbidity of patients.
-### Contribution
+#### Contribution
 1. Data cleaning, outlier removing, extreme imbalanced data preprocessing (400:1)
 2. Features include demography data, lab data, medical history, vital sign, and departments
 3. Modeling with machine learning 
@@ -56,39 +200,39 @@ Reduce the mortality and morbidity of patients.
 8. **Get more than 40% F1-score when predicting the risk of 5 common complications** 
 ---
 
-## ENHANCED PREDICTION OF MORTALITY IN CRITICALLY ILL PATIENTS BY COMBINING MACHINE LEARNING MODELS: A THREE-STEP STRATEGY AND PREDICTED RISK-STRATIFIED ANALYSIS
-### Collaborator
+### Enhanced Prediction Of Mortality In Critically Ill Patients By Combining Machine Learning Models: A Three-Step Strategy And Predicted Risk-Stratified Analysis
+#### Collaborator
 Dr. Yu-Chang Yeh
-### Project introduction
+#### Project introduction
 Build an AI prediction model of mortality and length of stay. 
-### Target
+#### Target
 Reduce the mortality and morbidity of patients by paying more attention on patients in higher risk.
-### Contribution
+#### Contribution
 1. Data cleaning
 2. Feature engineering
 3. Modeling with machine learning
 4. Get over 80% in accuracy, 90% in AUROC, and 60% in F1-score
 5. Prediction performance is better than APACHE II and APACHE IV
 ---
-## ONSET DATE EXTRACTION FOR STROKE PATIENT
-### Collaborator
+### Onset Date Extraction For Stroke Patient
+#### Collaborator
 Associate Prof. Pei-Fang Tang
-### Project introduction
+#### Project introduction
 Extract the onset date of stroke patients and their NIH Stroke Scale (NIHSS) from the admission summary.
-### Target
+#### Target
 Reduce more than 30% of the time for clinical caregivers to survey medical records. 
-### Contribution
+#### Contribution
 1. Data cleaning
 2. Use regular expression to filter out the sentences without date-alike strings.
 3. Use LSTM to vote if the reserved data contains the onset date or not.
 4. Get **over 80% in accuracy**
 ---
-## PHYSICAL ACTIVITY LEVEL IDENTIFICATION
-### Advisor
+### Physical Activity Level Identification
+#### Advisor
 Prof. Chia-Tai Chan, principal investigator of Ubiquitous Computing Laboratory
-### Project introduction
+#### Project introduction
 To monitoring user's daily activity levels, I had developed an Android App to collect user's demography data and acceleration data. Then I modeling these data with machine learning models and compare the performance.
-### Contribution
+#### Contribution
 1. **App development**
 2. Data collection
 3. Feature engineering
@@ -97,12 +241,12 @@ To monitoring user's daily activity levels, I had developed an Android App to co
 6. Submit Conference paper and it has been adapted
 
 ---
-## LATERALIZATION OF WOMEN’S BRAIN CHANGE WITH AGE
-### Advisor 
+### Lateralization Of Women’S Brain Change With Age
+#### Advisor 
 Prof. Yu-Te Wu, principal investigator of Medical Image and Signal Analysis Laboratory
-### Project introduction
+#### Project introduction
 The lateralization of brain function refers to some neural functions, or cognitive processes tend to be more dominant in one hemisphere than the other. The project is to find out the relation between age and the change of lateralization pattern.
-### Contribution
+#### Contribution
 1. Use 100 females' T1 images with cortical surface extraction and curvature_based alignment.
   
 2. Use 5 features of brain structure include:
